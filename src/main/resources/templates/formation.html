@@ -13,7 +13,7 @@
     </div>
     <div class="col">
       <h2 class="text-center">Gestion des formations</h2>
-      <form th:action="add" th:object="${f}" method="post">
+      <form th:action="@{/formation/add}" th:object="${f}" method="post">
 <div class="mb-3">
   <label  class="form-label">Titre</label>
   <input type="text" class="form-control" th:field="*{titre}" name="titre"  placeholder="votre titre ici">
