@@ -43,7 +43,10 @@ public List<Formation> search(@PathVariable String titre,@PathVariable double pr
 return formationRepository.findByTitreOrPrix(titre, prix,pageable);	
 
 }
-
+public String getData()
+{
+return "hello";	
+}
 
 
 }
